@@ -7,7 +7,7 @@ import { FeaturedProductStyles } from "./FeaturesStyles"
 const FeaturedProduct = ({ feature }) => {
   const { gatsbyPath, headerImage, title, introduction } = feature
   const image = getImage(headerImage)
-
+  console.log(image)
   return (
     <FeaturedProductStyles>
       <Link to={gatsbyPath}>

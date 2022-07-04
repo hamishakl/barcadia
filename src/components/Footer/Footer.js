@@ -5,10 +5,8 @@ import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
 import useAllProduct from "../../hooks/use-all-product"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import {
-  FaFacebookSquare as Facebook,
-  FaTwitterSquare as Twitter,
-  FaInstagram as Instagram,
-  FaLinkedin as Linkedin,
+  FaEnvelope as Email,
+  FaGithub as Github,
 } from "react-icons/fa"
 
 const Footer = () => {
@@ -65,50 +63,25 @@ const Footer = () => {
               Follow me<span>.</span>
             </h5>
             <ul>
-              {siteMeta.twitterUsername && (
                 <li>
                   <a
-                    href={`https://www.twitter.com/${siteMeta.twitterUsername}`}
+                    href={`https://github.com/hamishakl`}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
-                    <Twitter />
+                    <Github />
                   </a>
                 </li>
-              )}
-              {siteMeta.facebookUsername && (
                 <li>
                   <a
-                    href={`https://www.facebook.com/${siteMeta.facebookUsername}`}
+                    href={`mailto:hamishjustin7@gmail.com`}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
-                    <Facebook />
+                    <Email />
                   </a>
                 </li>
-              )}
-              {siteMeta.instagramUsername && (
-                <li>
-                  <a
-                    href={`https://www.instagram.com/${siteMeta.instagramUsername}`}
-                    target="_blank"
-                    rel="nofollow noreferrer noopener"
-                  >
-                    <Instagram />
-                  </a>
-                </li>
-              )}
-              {siteMeta.linkedinUsername && (
-                <li>
-                  <a
-                    href={`https://www.linkedin.com/in/${siteMeta.linkedinUsername}`}
-                    target="_blank"
-                    rel="nofollow noreferrer noopener"
-                  >
-                    <Linkedin />
-                  </a>
-                </li>
-              )}
+              
             </ul>
           </FooterMenuStyles>
         ) : (

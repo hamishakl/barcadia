@@ -42,7 +42,7 @@ export const data = graphql`
       }
       gallery {
         gatsbyImageData(
-          width: 1000
+          width: 1500
           placeholder: BLURRED
           formats: [AUTO, WEBP, AVIF]
         )

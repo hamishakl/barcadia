@@ -16,7 +16,7 @@ const useFeaturedProduct = () => {
           introduction
           headerImage {
             gatsbyImageData(
-              width: 1000
+              width: 2000
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
             )

@@ -10,15 +10,15 @@ module.exports = {
   siteMetadata: {
     title: "Hamish Henare",
     description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
+    author: "Hamish Henare",
     twitterUsername: "barcadia",
     facebookUsername: "barcadia",
     instagramUsername: "barcadia",
     linkedinUsername: "morgan-baker-development",
     image: "/macbook-color.jpg",
     siteUrl: "https://barcadia.netlify.com",
-    developerName: "Morgan Baker Development",
-    developerUrl: "https://www.morganbaker.dev",
+    developerName: "Hamish Henare",
+    developerUrl: "https://www.hamishhenare.com",
   },
   /* Your site config here */
   plugins: [
