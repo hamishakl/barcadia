@@ -5,6 +5,8 @@ import Seo from "../../components/SEO"
 import Layout from "../../components/Layout"
 
 const Product = ({ data: { contentfulProduct } }) => {
+  console.log('below');
+  console.log(contentfulProduct)
   return (
     <>
       <Seo title={contentfulProduct.title} />
@@ -21,6 +23,7 @@ export const data = graphql`
       title
       introduction
       price
+      link
       headerImage {
         gatsbyImageData(
           width: 2000

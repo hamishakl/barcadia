@@ -86,6 +86,7 @@ const Producttemplate = (contentfulProduct) => {
         price={price}
         subTitle={introduction}
         enquire={true}
+        link={'https://www.take2nz.org'}
       >
         <GatsbyImage
           className="banner__image"
@@ -126,7 +127,7 @@ const Producttemplate = (contentfulProduct) => {
         </ProductGallery>
       )}
       <Features
-        title="Featured Products from Barcadia."
+        title="Featured Projects from Hamish."
         introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
       />
     </>

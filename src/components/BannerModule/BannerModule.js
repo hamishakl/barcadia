@@ -4,7 +4,7 @@ import { BannerModuleStyles } from "./BannerModuleStyles"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../Button/Button"
 
-const BannerModule = ({ children, title, subTitle, price, enquire }) => {
+const BannerModule = ({ children, title, subTitle, price, enquire, link }) => {
   function scrollToArea() {
     navigate("#topContent")
   }
@@ -34,24 +34,15 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
               </h1>
             )}
             {subTitle && <h2>{subTitle}</h2>}
-            {price && (
-              <h2 className="price">
-                £{price}
-                <span style={{ color: "var(--primary)" }}>.</span>
-              </h2>
-            )}
             <div className="banner__btns">
               {enquire && (
                 <Button
                   className="btn"
-                  text="Enquire Now"
+                  text="View"
                   as={Link}
-                  to="/contact"
+                  to={link}
                 />
               )}
-              <Link to="/about">
-                <Button text="About"></Button>
-              </Link>
             </div>
           </div>
         </div>
