@@ -5,7 +5,7 @@ export const menuItems = [
   },
   {
     path: "/products",
-    text: "products",
+    text: "projects",
   },
   {
     path: "/blogs",

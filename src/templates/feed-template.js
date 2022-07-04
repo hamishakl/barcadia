@@ -24,7 +24,7 @@ const FeedTemplate = (contentfulPage) => {
     <>
       <Seo title={contentfulPage.title} />
       <Layout>
-        <SimpleBanner title={contentfulPage.title}>
+        <SimpleBanner title={'Projects'}>
           <GatsbyImage
             className="banner__image"
             image={headerImage}
