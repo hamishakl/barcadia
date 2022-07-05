@@ -4,9 +4,21 @@ import { BannerModuleStyles } from "./BannerModuleStyles"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../Button/Button"
 
-const BannerModule = ({ children, title, subTitle, price, enquire, link }) => {
+const BannerModule = ({ children, title, subTitle, price, enquire }) => {
   function scrollToArea() {
     navigate("#topContent")
+  }
+  let link 
+  if (title === 'Piritahi') {
+    link = 'https://piritahi.nz'
+  } else if (title === 'Strength Tracker') {
+    link = 'https://strength-tracker.vercel.app'
+  } else if (title === 'Take2') {
+    link = 'https://take2nz.org'
+  } else if (title === 'TakeMe') {
+    link = 'https://take-me-nz.herokuapp.com/about'
+  } else if (title === 'South City Towing'){
+    link = 'https://www.southcitytowing.co.nz/'
   }
 
   return (

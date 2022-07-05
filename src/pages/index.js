@@ -28,7 +28,7 @@ const Index = () => {
         /> */}
         <Features
           title="Featured projects"
-          introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
+          // introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
         />
         {/* <PerksModule>
           <Perk title="The Title" content="The content" />

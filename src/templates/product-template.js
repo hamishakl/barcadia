@@ -76,8 +76,10 @@ const Producttemplate = (contentfulProduct) => {
     description,
     faqs,
     gallery,
+    url
   } = contentfulProduct
   const productHeaderImage = getImage(headerImage)
+  console.log(url)
   return (
     <>
       <Seo title={title} />
@@ -86,7 +88,7 @@ const Producttemplate = (contentfulProduct) => {
         price={price}
         subTitle={introduction}
         enquire={true}
-        link={'https://www.take2nz.org'}
+        link={url}
       >
         <GatsbyImage
           className="banner__image"
@@ -128,7 +130,7 @@ const Producttemplate = (contentfulProduct) => {
       )}
       <Features
         title="Featured Projects from Hamish."
-        introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
+        // introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
       />
     </>
   )
