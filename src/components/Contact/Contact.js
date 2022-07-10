@@ -5,7 +5,12 @@ import { ContactStyles } from "./ContactStyles"
 const Contact = () => {
   return (
     <ContactStyles className="section">
-      <form name="contact" method="post" data-netlify="true">
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <input placeholder="Your name..." type="text" name="name" />
         <input placeholder="Your email..." type="email" name="emails" />
         <textarea
@@ -13,7 +18,8 @@ const Contact = () => {
           name="message"
           rows="5"
         ></textarea>
-        <Button text="Send Message" />
+        <input type="hidden" name="form-name" value="contact" />
+      <Button text="Send Message" />
       </form>
     </ContactStyles>
   )
